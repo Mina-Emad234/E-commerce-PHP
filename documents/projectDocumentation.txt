@@ -1,0 +1,152 @@
+====================Admin section==============
+$nonavbar---->it's a variable prevent including nav bar in the pageSv1.0
+-------functions.php---------
+1**get title----> hasn't params for putting title in pageS, have global var
+**check if the page check if the page hava this var and put it's value in the title
+**title is printed in header.php
+-----------
+2**redirection page have params(msg,link,num of seconds)v2.0
+**redirect to another page after showing specific alert
+** check if url is null --->redirect to index.php if not redirect to previous page
+**check if php-referer(previous page) is set, will redirect to if not, redirect index.php
+-----------
+3**checkdb() has params(columns or fields,table,values of the fields) v1.0
+**select db record and check if exists
+**return rowCount that we checed through if it == 1 ,record exists If it == 0,not exists
+----------
+4**countItems()for count any items(num of rows) in DB
+**takes two params Field name param & table param And use query to con t items
+----------
+5**getLatest() get latest num of items from db takes params
+** params afield selected & table name & field used for order other fields descending
+** & number of latest items that i will showing
+**using a query select ...orderby..decsc to get items
+------------------------------------------------
+---------remember.php--------------
+open by admin that come from session.
+have come sections check the value of link var if empty, it will be default if not, it will == manage
+/*
+**manage section : showing data of users (select*from...) and we can (Add) users through
+**Add section : for add users by admin and post data to insert section
+**insert section : check errors of input data and insert this data into DB if not exists
+**delete section : delete users after check if user exists
+**activate section: for active un active users throught checking RegStatus
+*
+**edit section : opened throught edit link in dash board.php throught link
+**link of dach board contains section name & userid (Admin) that open through session
+**& checking user id session if exists
+**for edit data of admins & users data and post them to update section
+**it select data of user and admins and put it in the form
+*
+**update section : catch data, check errors of it & update in DB if it's not exists
+*/
+-------------------------------------------- 
+--------------------dashboardphp------------
+/*
+**contins total nums of users, pending users, categories, and comments
+**get num of users by using count items function
+**get number of bending users by using check db function>>>that get num of rows
+**numbers that in this page used as link to redirect for there destinations
+*
+**it contains olso latest number of user & latest num of items
+**in latest num of users we use get latest func get users & put edit and activate button
+**if require activation
+*/
+---------------------------------------------
+---------------categories.php------------------
+/*
+**categories are getten  from db
+**Add section : contains form to add categories
+**insert section : get data of ADD section form & inser it into DB
+**Manage section : contains Info about categories and ability to edit or delete
+**Edit section : for edit categories info to update
+**Update section : get data posted from Edit section and update in DB
+**Delete section : delete data from DB & Manage section
+*/
+------------------------------------------------
+-----------------items.php----------------------
+/*
+**contains Items that will shown in ou site
+**Add section : contains form to add Items
+**add members from users table & add  cat..s from cat..s table
+**items,users,cat..s are related in DB throught FK throught their ID
+**insert section : get data of ADD section form & inser it into DB
+**Manage section : contains Info about items and ability to edit or delete or approve
+**it related to category name & user name that shown with items
+**Edit section : for edit categories info to update
+**Update section : get data posted from Edit section and update in DB
+**Delete section : delete data from DB & Manage section
+**Approve section: for Approve un Approved items throught checking if Approve in db = 0
+*/
+----------------------------------------------------
+------------------comments.php---------------------
+/*
+**contains all section in member.php except add & insert section.
+**commsent related to item_name & user_name in DB
+*/
+===================================================================================
+---------------------------front end section------------------------
+**contains folders from admin section(layout, temolates)
+**contins files like init.php, index.php, logout.php & conn.php
+--------------------------------------------------------------------
+---------------------------functions.php----------------------------
+/* 
+**getCat()
+**get category records of DB to show in navbar & body categories page, it has no params
+*/
+
+/* 
+**checkUserStatus() : check If user isn't activated it take one param (username)
+*/
+/* 
+**getItems()
+**get items records of DB to show in body categories page
+**has 2 params ($where) for condition of the query & ($value) of condition
+*/
+/*
+**getAllFrom()
+**get all records from any table ,contains sparams
+**$field>>>field  choosen from DB | $table>>>table name | $where>>>>field condition
+**$whereValue>>value of field condition | $and>>>addtional where condetion 
+**$andV>>>value of and
+**$order>>>order field | $desc>>>descending order
+**it contains if condition for where oond order if not null, put there stmts in the query
+*/
+---------------------------categories.0php-------------------------------
+/*
+**contains ads about categories, items & users
+**it contains section of categories that contains ads of users about items\
+*/ 
+---------------------------login.0php-------------------------------
+/*
+**contains login section & signup section
+*/
+---------------------------profile.0php-----------------------------
+/*
+**contains info, ads & comments of users
+*/
+-------------------------adnew.php----------------------------------/*
+/*
+**for adding new ads about items in website it contains ability to see your ad while *preparing
+*/
+-------------------------items.php----------------------------------
+/*
+**contains more detaila about ads & comments opened throught item name link in profile.php
+*/
+-------------------------index.php-----------------------------------
+/*
+**contains all approved ads of website 
+**didn,t use session because it's public for all
+*/
+----------------------------------------------------------------------
+-------------------------tags.php------------------------------------
+/*
+**contains tags and ads related of it
+**entered from a link in items.php
+*/
+----------------------------------------------------------------------
+/*
+**adding parent field in categories table in DB to make sub category
+**it contains id of parent category
+**items.php/newad.php
+*/

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62bb6755-8281-4d3b-8ab5-ae3e9750a319" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1w1mCDefsUd7ntjjwJREE4OplOC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\myProjects\E-commerce\admin" />
+      <recent name="E:\xampp\htdocs\myProjects\E-commerce\admin\layout\css" />
+      <recent name="E:\xampp\htdocs\myProjects\E-commerce\admin\layout\js" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62bb6755-8281-4d3b-8ab5-ae3e9750a319" name="Default Changelist" comment="" />
+      <created>1627634338663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627634338663</updated>
+      <workItem from="1627634340365" duration="18016000" />
+      <workItem from="1627718621732" duration="9970000" />
+      <workItem from="1627742254606" duration="1521000" />
+      <workItem from="1627755502176" duration="11557000" />
+      <workItem from="1627771422627" duration="781000" />
+      <workItem from="1627808476613" duration="32000" />
+      <workItem from="1627994809706" duration="1134000" />
+      <workItem from="1628060534753" duration="22456000" />
+      <workItem from="1628155383882" duration="16744000" />
+      <workItem from="1628241678999" duration="23599000" />
+      <workItem from="1628945465695" duration="795000" />
+      <workItem from="1629658608114" duration="652000" />
+      <workItem from="1631183122371" duration="4919000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/items.php</url>
+          <line>123</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
